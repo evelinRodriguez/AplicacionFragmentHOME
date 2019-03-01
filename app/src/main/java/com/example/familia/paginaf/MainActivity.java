@@ -6,6 +6,9 @@ import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,6 +20,14 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView bottonnav=findViewById(R.id.bottom_navigation);
         bottonnav.setOnNavigationItemSelectedListener(navListener);
 
+
+    }
+    public void Mensaje(View view){
+        EditText salon=(EditText)findViewById(R.id.editText);
+        EditText sede=(EditText)findViewById(R.id.editText3);
+
+        String mesage=String.format("el salon %s, de la sede%,esta agregado",salon.getText().toString(),sede.getText().toString());
+        Toast.makeText(MainActivity.this,mesage,Toast.LENGTH_SHORT).show();
 
     }
 

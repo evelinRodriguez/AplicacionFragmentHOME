@@ -2,13 +2,93 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_red_light">
+    android:background="@android:color/background_light">
 
-    <TextView
+    <EditText
+        android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="home fragment"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"/>
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="418dp"
+        android:ems="10"
+        android:inputType="number" />
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="62dp"
+        android:text="sede"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="137dp"
+        android:text="edificio"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="217dp"
+        android:text="salon"
+        android:textColor="@android:color/background_dark" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_alignBaseline="@+id/textView8"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="343dp"
+        android:layout_toEndOf="@+id/textView6"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView9"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-15dp"
+        android:layout_marginEnd="71dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView6"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="-369dp"
+        android:text="borrar" />
 
 </RelativeLayout>
